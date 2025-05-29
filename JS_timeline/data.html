@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline Practice</title>
+    <style>
+        /* style.css */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            /* consistent space below title */
+            color: white;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 20px auto;
+            /* horizontally centered, vertical spacing */
+            padding: 10px 0;
+            /* reduce vertical padding */
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: steelblue;
+            top: 0;
+            /* full height */
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .boxes {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .boxes::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background-color: white;
+            border: 4px solid steelblue;
+            top: 20px;
+            /* slightly lower for better alignment */
+            border-radius: 10%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -13px;
+            right: auto;
+        }
+
+        .content {
+            padding: 15px 25px;
+            /* reduce padding a bit */
+            background-color: white;
+            position: relative;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h3 {
+            margin-top: 0;
+            color: steelblue;
+        }
+
+        .content i {
+            font-style: normal;
+            color: #555;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .content small {
+            color: #999;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+
+            .boxes {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .boxes::after {
+                left: 15px;
+                right: auto;
+                top: 20px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+
+        .toggle-header {
+            cursor: pointer;
+        }
+
+        .toggle-body {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align:center; margin-top: 0;">Work Timeline</h2>
+    <div class="timeline"></div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+[
+    {
+        "company": "Google Company",
+        "position": "Project Director",
+        "years": "2030 - 2037",
+        "description": "Managed global mobile projects across multiple markets."
+    },
+    {
+        "company": "Samsung Company",
+        "position": "Project Director",
+        "years": "2025 - 2030",
+        "description": "Led innovation and R&D efforts in smartphone division."
+    },
+    {
+        "company": "Apple Company",
+        "position": "Project Director",
+        "years": "2020 - 2025",
+        "description": "Oversaw product lifecycle and tech partnership strategies."
+    },
+    {
+        "company": "Microsoft Company",
+        "position": "Project Director",
+        "years": "2020 - 2025",
+        "description": "Oversaw product lifecycle and tech partnership strategies."
+    },
+    {
+        "company": "Linux Company",
+        "position": "Project Director",
+        "years": "2020 - 2025",
+        "description": "Oversaw product lifecycle and tech partnership strategies."
+    },
+    {
+        "company": "Binance Company",
+        "position": "Project Director",
+        "years": "2020 - 2025",
+        "description": "Oversaw product lifecycle and tech partnership strategies."
+    }
+]
